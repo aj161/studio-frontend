@@ -1,0 +1,135 @@
+header {
+  font-family: "Jost";
+  font-weight: 300;
+  margin:0;
+  background-color: #f8f8f8;
+
+}
+
+.main-nav {
+  height: 90px;
+  z-index:1;
+}
+
+.logo {
+  height:90px;
+  float:left;
+  padding-left: 5%;
+}
+
+.navlinks {
+  list-style: none;
+  float: right;
+  line-height: 90px;
+  margin: 0;
+  padding: 0;
+}
+
+.navlinks li {
+  display: inline-block;
+  margin: 0px 20px;
+}
+
+.navlinks li a {
+  color: #7A949A;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: 400;
+  transition: all 0.3s linear 0s;
+}
+
+.navlinks li a:hover {
+  color:  #485E5a;
+  padding-bottom: 7px;
+  border-bottom: 1.5px solid #485E5a;
+}
+
+li a.contact {
+  background-color: #050e00;
+  padding: 9px 20px;
+  border-radius: 50px;
+  transition: all 0.3s ease 0s;
+  border-bottom: none;
+  color:rgb(255, 255, 255);
+}
+
+li a.contact:hover {
+  background-color: #7A949A;
+  color: white;
+  border-bottom: none;
+}
+
+#check {
+  display: none;
+}
+
+.menu-btn {
+  font-size: 25px;
+  color: black;
+  float: right;
+  line-height: 90px;
+  margin-right: 10%;
+  display: none;
+  cursor: pointer;
+}
+
+@media (max-width: 800px) {
+  .navlinks {
+    position: fixed;
+    width: 80%;
+    text-align: center;
+    transition: all 0.5s;
+    right: -110%;
+    top: 90px;
+    background: #7A949A;
+    border-radius: 10px;
+    opacity:0.95;
+    color:white;
+    margin-right: 10%;
+  }
+
+  .navlinks li {
+    display: block;
+    line-height: 50px;
+  }
+
+  .navlinks li a {
+    font-size: 20px;
+  }
+
+  .navlinks li a:hover {
+    border-bottom: none;
+  }
+
+  .menu-btn {
+    display: block;
+  }
+
+  #check:checked ~ .navlinks {
+    right: 0;
+  }
+
+  .navlinks li a{
+    color:#E4D8CA;
+  }
+
+  li a.contact {
+    color:white;
+  }
+}
+
+@media (max-width: 360px) {
+  .logo {
+    margin-left: 10px;
+    font-size: 25px;
+  }
+
+  .menu-btn {
+    margin-right: 10px;
+    font-size: 25px;
+  }
+
+
+
+
+}

@@ -1,0 +1,78 @@
+#parent_div {
+  display: flex;
+  width:100%;
+  flex-wrap: wrap;
+  position: relative;
+  padding-top: 90px;
+  margin-bottom: 30px;
+  animation: up 1.5s ease 0s normal forwards; 
+  z-index:-1;
+}
+
+#parent_div section {
+  width:100%;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #7A949A;
+}
+
+.box {
+  width:50%;
+  height: 50vh;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#first {
+  object-fit: cover;
+  background-image:url(./bread_2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position:center center;
+  display: flex;
+}
+
+#fourth {
+  object-fit: cover;
+  background-image:url(./pastry_3.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position:center center;
+  display: flex;
+}
+
+#fifth {
+  object-fit: cover;
+  background-image:url(./plate.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position:center center;
+  display: flex;
+}
+
+#eighth {
+  object-fit: cover;
+  background-image:url(./chocolate.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position:center center;
+  display: flex;
+}
+
+h2 {
+  font-family: "Jost", sans-serif;
+  font-size: 1.8rem;
+  color:#E4D8CA;
+}
+
+@media (min-width: 700px) {
+
+  #parent_div section {
+    width:50%;
+    display: flex;
+  }
+
+}
+
+

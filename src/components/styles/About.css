@@ -1,0 +1,111 @@
+#about{
+  font-family: 'Jost', sans-serif;
+  z-index:-1;
+  position:relative;
+}
+
+.shop{
+  object-fit: cover;
+  width:100%;
+  height:calc( 100vh + 90px);
+  background-image:url(./shop_2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position:center center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: appear 1.5s ease-in-out 0.1s normal forwards; 
+  z-index:-1;
+}
+
+#contact_button {
+  font-family: 'Jost', sans-serif;
+  background-color: #7A949A;
+  font-size: 1.2rem;
+  border:none;
+  padding: 15px 30px;
+  transition: all 0.3s ease 0s;
+  color:white;
+  font-weight: 500;
+  margin: auto;
+  animation: up 1s ease 0s normal forwards; 
+  z-index:-1;
+}
+
+#contact_button:hover {
+  background-color: transparent;
+  border: 3px solid white;
+  padding: 18px 35px;
+  z-index:-1;
+}
+
+#quote_2 h2 {
+  font-size: 2.3em;
+  padding:15vh 5% 0 5%;
+  color:black;
+}
+
+#quote_2 {
+  width:80%;
+  margin:auto;
+}
+
+#quote_2 p {
+  margin-bottom:0px;
+  font-size: 1.2em;
+  font-weight:300;
+  padding: 30px 10% 15vh 10%;
+  color: #c9a74d;
+  margin-bottom: 0px;
+  text-align: justify;
+}
+
+#ambience {
+  display: flex;
+  flex-wrap: wrap;
+  width:100%;
+  background-color: #E4D8CA;
+  padding: 50px 0px;
+  align-items: center;
+  justify-items: center;
+  margin-bottom: 40px;
+
+}
+
+#delight {
+  width:100%;
+  padding:10px;
+  object-fit: cover;
+  margin-left: auto;
+
+}
+
+#window {
+  width:100%;
+  padding:10px;
+  object-fit: cover;
+  margin-right: auto;
+}
+
+
+
+@media (min-width: 700px) {
+  #delight {
+    width:30%;
+    padding:10px;
+    max-height: 80vh;
+    
+  }
+
+  #window {
+    width:35%;
+    max-height: 90vh;
+  }
+
+  #quote_2 {
+    width:40%;
+  }
+
+}
+

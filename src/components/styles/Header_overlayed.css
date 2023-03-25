@@ -1,0 +1,176 @@
+#header-ov {
+  font-family: "Jost";
+  font-weight: 300;
+  margin:0;
+  background-color: #00000023;
+  z-index:9999;
+}
+
+.menu-btn {
+  position: fixed;
+  z-index: 3;
+  top:20px;
+  right: -10px;
+  cursor: pointer;
+  background-color: #6a533755;
+  padding:15px 10px 10px 10px;
+  transition: all 0.5s ease-out;
+}
+
+/* Styling the hamburger lines */
+.menu-btn .btn-line {
+  width: 28px;
+  height: 3px;
+  margin: 0 0 5px 0;
+  background-color: rgb(239, 236, 236);
+  transition: all 0.5s ease-out;
+}
+
+.main-nav-ov {
+  height: 90px;
+  z-index:1;
+}
+
+.logo-ov {
+  height:90px;
+  float:left;
+  padding-left: 5%;
+}
+
+.logo-ov-nav {
+  display: none;
+}
+
+.navlinks-ov {
+  list-style: none;
+  float: right;
+  line-height: 90px;
+  margin: 0;
+  padding: 0;
+}
+
+.navlinks-ov li {
+  display: inline-block;
+  margin: 0px 20px;
+}
+
+.navlinks-ov li a {
+  color:  #eeebe3;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: 400;
+  transition: all 0.3s linear 0s;
+  text-shadow: 5px 5px 5px #0c0c0c;
+  
+}
+
+.navlinks-ov li a:hover {
+  color:  #c6ae6e;
+  padding-bottom: 7px;
+  border-bottom: 1.5px solid #c6ae6e;
+  font-size: 1.6rem;
+
+}
+
+li a.contact-ov {
+  background-color: #eeebe3;
+  padding: 9px 20px;
+  border-radius: 50px;
+  transition: all 0.3s ease 0s;
+  border-bottom: none;
+  color:#c6ae6e;
+  text-shadow: none;
+}
+
+li a.contact-ov:hover {
+  background-color: #7A949A;
+  color: white;
+  border-bottom: none;
+}
+
+#check-ov {
+  display: none;
+}
+
+.menu-btn-ov {
+  font-size: 25px;
+  color: black;
+  float: right;
+  line-height: 90px;
+  margin-right: 10%;
+  display: none;
+  cursor: pointer;
+}
+
+@media (max-width: 800px) {
+  .navlinks-ov {
+    position: fixed;
+    width: 70%;
+    height:100vh;
+    text-align: center;
+    transition: all 0.5s;
+    left: -110%;
+    top: 0px;
+    background: #f7f7f4;
+    margin-right: 10%;
+  }
+
+  .logo-ov-nav {
+    display: inline-block;
+    width:70%;
+    padding:5vh 0px;
+  }
+  
+  .navlinks-ov li {
+    display: block;
+    line-height: 50px;
+  }
+  
+  .navlinks-ov li a {
+    font-size: 20px;
+    text-shadow: none;
+    color:#c5baad;
+  }
+
+  .navlinks-ov li a:hover {
+    border-bottom: none;
+  }
+
+  .menu-btn-ov {
+    display: block;
+  }
+
+  #check-ov:checked ~ .navlinks-ov {
+    left: 0;
+  }
+
+  #check-ov:checked ~ * .btn-line:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+
+  #check-ov:checked ~ * .btn-line:nth-child(2) {
+    opacity:0;
+  }
+
+  #check-ov:checked ~ * .btn-line:nth-child(3) {
+    transform: rotate(-45deg) translate(7px, -6px);
+  }
+
+  li a.contact-ov {
+    color:#f7f7f4;
+    background-color:#c5baad;
+  }
+}
+
+@media (max-width: 360px) {
+  .logo-ov {
+    margin-left: 10px;
+    font-size: 25px;
+  }
+
+  .menu-btn-ov {
+    margin-right: 10px;
+    font-size: 25px;
+  }
+
+}
