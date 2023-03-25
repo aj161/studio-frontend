@@ -2,7 +2,7 @@ import './App.css';
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home_3 from './components/Home_3';
 import Header2 from './components/Header2';
-// import Header_overlayed from "./components/Header_overlayed";
+import ScrollToTopButton from './components/ScrollToTopButton';
 import Footer from './components/Footer';
 import About from './components/About';
 import Products from './components/Products';
@@ -27,6 +27,7 @@ function App() {
           <Route exact path="/products" element={<Products/>}/>
           <Route exact path="/basket" element={<Basket/>}/>
         </Routes>
+        <ScrollToTopButton/>
         <Footer /> 
           </div>
       </BrowserRouter>

@@ -1,0 +1,52 @@
+html {
+  scroll-behavior: smooth;
+}
+
+/* #scrollToTopButton {
+  color: #bbafa2;
+  font-size: 1.5rem;
+  padding: 0.1rem 0.5rem 0 0.5rem;
+  position: fixed;
+  right: 1rem;
+  bottom: 1rem;
+  border-radius: 50%;
+  box-shadow: 0 0.25rem 0.5rem 0 gray;
+  background-color: rgb(255, 255, 255, 0.7);
+  } */
+
+#scrollToTopButtonWrap {
+  position: absolute;
+  top: 150vh;
+  right:1rem;
+  bottom: 0;
+  pointer-events: none;
+  backface-visibility: hidden;
+
+}
+
+#scrollToTopButton {
+  color: #bbafa2;
+  font-size: 1.5rem;
+  padding: 0.25rem 0.5rem 0 0.5rem;
+  border-radius: 50%;
+  box-shadow: 0 0.25rem 0.5rem 0 gray;
+  background-color: rgb(255, 255, 255, 0.7);
+
+  pointer-events: all;
+  position:fixed;
+  position: sticky;
+  top: calc( 100vh - 3rem);
+  right: 1rem;
+}
+
+#scrollToTopButton:hover {
+  opacity: 0.8;
+}
+
+#scrollToTopButton:focus {
+  opacity: 0.9;
+}
+
+#scrollToTopButton:active {
+  opacity: 1;
+}
