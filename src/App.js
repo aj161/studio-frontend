@@ -13,8 +13,14 @@ import HeaderFinal from './components/HeaderFinal';
 function App() {
 //Adding Google analytics
   const TRACKING_ID = "G-HT8WJQ9FZ3";
-  ReactGA.initialize(TRACKING_ID);
-  ReactGA.pageview(window.location.pathname + window.location.search);
+
+  function initialiseAnalytics() {
+    return 
+      ReactGA.initialize(TRACKING_ID);
+      ReactGA.pageview(window.location.pathname + window.location.search);
+  }
+
+  initialiseAnalytics();
 
   return (
 
