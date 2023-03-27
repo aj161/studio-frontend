@@ -1,5 +1,6 @@
 import './App.css';
 import ReactGA from 'react-ga';
+import { useEffect } from 'react';
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home_3 from './components/Home_3';
 import Header2 from './components/Header2';
@@ -15,12 +16,13 @@ function App() {
   const TRACKING_ID = "G-HT8WJQ9FZ3";
 
   function initialiseAnalytics() {
-    return 
       ReactGA.initialize(TRACKING_ID);
       ReactGA.pageview(window.location.pathname + window.location.search);
   }
 
-  initialiseAnalytics();
+  useEffect(() => {
+    initialiseAnalytics();
+  });
 
   return (
 
