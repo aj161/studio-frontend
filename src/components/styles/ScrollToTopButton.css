@@ -27,7 +27,7 @@ html {
 #scrollToTopButton {
   color: #bbafa2;
   font-size: 1.5rem;
-  padding: 0.25rem 0.5rem 0 0.5rem;
+  padding: 0.4rem 0.5rem 0.22rem 0.5rem;
   border-radius: 50%;
   box-shadow: 0 0.25rem 0.5rem 0 gray;
   background-color: rgb(255, 255, 255, 0.7);
