@@ -112,8 +112,9 @@ header{
 
   .logoNav {
     display: inline-block;
-    width:70%;
+    max-width:70%;
     padding:5vh 0px;
+    max-height: 40vh;
   }
 
   .logoTop {

@@ -3,8 +3,8 @@ import style from "./styles/Header2.css";
 import { MDBIcon } from 'mdb-react-ui-kit';
 
 
-
 function Header2() {
+
   return (
     <>
       <header>

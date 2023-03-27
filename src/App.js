@@ -1,5 +1,5 @@
 import './App.css';
-import ReactGA from 'react-ga'
+import ReactGA from 'react-ga';
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home_3 from './components/Home_3';
 import Header2 from './components/Header2';
@@ -11,9 +11,10 @@ import Basket from './components/Basket';
 import HeaderFinal from './components/HeaderFinal';
 
 function App() {
-
+//Adding Google analytics
   const TRACKING_ID = "G-HT8WJQ9FZ3";
-ReactGA.initialize(TRACKING_ID);
+  ReactGA.initialize(TRACKING_ID);
+  ReactGA.pageview(window.location.pathname + window.location.search);
 
   return (
 
